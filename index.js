@@ -17,9 +17,8 @@ class Immutable {
 
   without(property) {
     let theNew = JSON.parse(JSON.stringify(this));
-
-    delete theNew[property];
-    return new Immutable(theNew);
+    
+    return new Immutable(_.omit(theNew, property));
   }
 }
 

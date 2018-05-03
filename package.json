@@ -1,6 +1,6 @@
 {
   "name": "great-immutable",
-  "version": "0.11.0",
+  "version": "0.1.1",
   "description": "A simple Immutable Library for Javascript",
   "main": "index.js",
   "scripts": {

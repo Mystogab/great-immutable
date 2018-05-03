@@ -60,3 +60,10 @@ console.log(newObj.address.name) // Cannot read property 'name' of undefined
 ## About this Library
 
 Made with the K.I.S.S idea on mind. Expect a couple of next versions (with new features, but not much).
+
+## Changelog
+v0.1.1
+- without function now use Lodash (omit)
+
+v0.1.0
+- Initial version

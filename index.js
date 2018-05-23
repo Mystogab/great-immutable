@@ -1,4 +1,4 @@
-const _ = require('lodash');
+const { set, omit } = require('lodash');
 const Freeze = require('deep-freeze');
 class Immutable {
   constructor(obj) {    
@@ -11,14 +11,14 @@ class Immutable {
   with(property, value) {
     let theNew = JSON.parse(JSON.stringify(this));
 
-    _.set(theNew, property, value);
+    set(theNew, property, value);
     return new Immutable(theNew);
   }
 
   without(property) {
     let theNew = JSON.parse(JSON.stringify(this));
     
-    return new Immutable(_.omit(theNew, property));
+    return new Immutable(omit(theNew, property));
   }
 }
 

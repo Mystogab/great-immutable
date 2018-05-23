@@ -2,7 +2,7 @@ const _ = require('lodash');
 const Freeze = require('deep-freeze');
 class Immutable {
   constructor(obj) {    
-    Object.keys(obj).forEach(key => {
+    Object.keys(obj).map(key => {
       this[key] = obj[key];
     });
     Freeze(this);

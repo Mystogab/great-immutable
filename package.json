@@ -1,6 +1,6 @@
 {
   "name": "great-immutable",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "A simple Immutable Library for Javascript",
   "main": "index.js",
   "scripts": {
@@ -25,6 +25,7 @@
   "homepage": "https://github.com/Mystogab/great-immutable#readme",
   "dependencies": {
     "deep-freeze": "0.0.1",
-    "lodash": "^4.17.10"
+    "lodash.omit": "^4.5.0",
+    "lodash.set": "^4.3.2"
   }
 }

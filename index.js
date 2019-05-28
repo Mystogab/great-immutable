@@ -1,4 +1,5 @@
-const { set, omit } = require('lodash');
+const set = require('lodash.set');
+const omit = require('lodash.omit');
 const Freeze = require('deep-freeze');
 class Immutable {
   constructor(obj) {    
